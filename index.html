@@ -41,6 +41,16 @@
       background-repeat:no-repeat;
       background-size:100% 100%;
       }
+
+      .status {
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: normal;
+      padding: 10px;
+      #word-wrap: break-word;
+      }
+
       .paragraph_style {
       color: 
       navy;
@@ -101,6 +111,13 @@
     </div>
 
     <div class="container-fluid edge-gradient" style="padding: 20px; max-width: 700px;">
+      <div class="row-fluid">
+        <div id="forecast" class="span12 edge_box" style="margin-bottom: 20px; box-shadow: -5px 4px 1px #999999; text-align: left;">
+          <span>Sherman Isl. Wind & Tide:</span><span class="status">{{forecast}}</span>
+          <br>
+          <span>Boat Times:</span><span class="status">{{departure}}</span>
+        </div>
+      </div>
       <div class="row-fluid">
         <div class="span6" style="margin-bottom: 20px;"><img alt="Edge Kiteboarding School logo" src="../static/img/edge-logo.png"></div>
         <div id="contact" class="span6 edge_box" style="margin-bottom: 20px; box-shadow: -5px 4px 1px #999999; text-align: center;">
